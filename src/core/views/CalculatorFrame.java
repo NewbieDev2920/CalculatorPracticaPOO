@@ -4,7 +4,7 @@
  */
 package core.views;
 
-import core.models.History;
+import core.models.storage.History;
 import core.models.Operation;
 import core.models.Calculator;
 import java.util.ArrayList;
@@ -116,6 +116,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
         });
 
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
@@ -302,6 +307,10 @@ public class CalculatorFrame extends javax.swing.JFrame {
         model.addAll(operationHistory);
         jList1.setModel(model);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
