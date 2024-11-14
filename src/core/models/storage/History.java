@@ -28,8 +28,9 @@ public class History {
         return instance;
     }
     
-    public void addOperation(Operation operation) {
+    public boolean addOperation(Operation operation) {
         this.operations.add(operation);
+        return true;
     }
 
     public ArrayList<Operation> getOperations() {
